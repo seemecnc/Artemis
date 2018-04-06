@@ -1,11 +1,17 @@
-M117 Beginning First Probe - Calibration will run twice
+M117 Begin Artemis First Probe Autolevel Calibration
+M104 S0
+M140 S0
+M117 Heat Off - Starting Autolevel Keep Clear
 M270 P0 I1
-M558 P5 I1 X0 Y0 Z0 H10 F200
 G32
-M117 Beginning Secode Probe - Head will tap twice on glass
-G4 S1
+M117 Bed Mapping
 M270 P1 I1
-M558 P5 I1 X0 Y0 Z0 H5 F200
+M106 P0 S0
+M106 P2 S0 H-1
+G29
+M106 P2 T50 S0.5 H1
+M117 Beginning Secode Probe
+G4 S1
 G32
 M500
-M117 Initial Calibration Complete
+M117 End Artemis First Probe Autolevel Calibration

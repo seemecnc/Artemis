@@ -1,0 +1,7 @@
+M117 Artemis Autolevel Calibration
+M104 S0
+M140 S0
+M270 P0 I1
+G32
+M500
+M117 Artemis Autolevel Calibration Complete
