@@ -1,0 +1,11 @@
+M117 Beginning First Probe - Calibration will run twice
+M270 P0 I1
+M558 P5 I1 X0 Y0 Z0 H10 F200
+G32
+M117 Beginning Secode Probe - Head will tap twice on glass
+G4 S1
+M270 P1 I1
+M558 P5 I1 X0 Y0 Z0 H5 F200
+G32
+M500
+M117 Initial Calibration Complete
