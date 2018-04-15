@@ -11,4 +11,4 @@ G30 P7 X54.13 Y-31.25 Z-99999
 G30 P8 X-54.13 Y-31.25 Z-99999
 G30 P9 X0 Y0 Z-99999 S6
 
-G28
+G0 Z150    ; Move the extruder out of the way
