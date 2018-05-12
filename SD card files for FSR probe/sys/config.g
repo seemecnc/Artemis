@@ -21,9 +21,9 @@ M350 X16 Y16 Z16 E16:16 I1                 ; Set 16x microstepping w/ Interpolat
 M92 X200 Y200 Z200                         ; Set axis steps/mm
 M92 E182.0:182.0                           ; Set extruder steps/mm
 
-M906 X1000 Y1000 Z1000 E1000:1000 I50      ; Set motor currents (mA) and idle current %
+M906 X1000 Y1000 Z1000 E1500:1500 I50      ; Set motor currents (mA) and idle current %
 M201 X5000 Y5000 Z5000 E5000               ; Accelerations (mm/s^2)
-M203 X30000 Y30000 Z30000 E30000           ; Maximum speeds (mm/min)
+M203 X25000 Y25000 Z25000 E25000           ; Maximum speeds (mm/min)
 M566 X2000 Y2000 Z2000 E2000               ; Maximum instant speed changes mm/minute
 
 M106 P0 H-1                                ; Part Cooling Fan
@@ -40,10 +40,9 @@ G10 P0 S0 R0                               ; Hot end operating and standby tempe
 ;M563 P1 D1 H1 F1                           ; Hot end (T1), drive (E1), heater (H1)
 ;G10 P1 S0 R0                               ; Hot end (1) operating and standby temperatures
 
-M558 P5 I1 X0 Y0 Z0 H5 F200                ; FSR Settings
+M558 P5 I1 A2 S0.05 H5 F200                ; FSR Settings
 G31 P500 X0 Y0 Z-0.3                       ; Probe trigger value and offsets
-M270 I1 P1 S0.05                           ; Enabled Probe doubletap w/ 0.05mm tolerance
 M557 R140 S30                              ; defualt bed mapping
 M501                                       ; Load saved config values
 T0                                         ; Select Tool 0
-
+M375									   ; Load height map
