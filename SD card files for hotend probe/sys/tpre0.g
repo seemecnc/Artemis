@@ -1,8 +1,6 @@
-; tpre0.g
-; called before tool 0 is selected
+; This file is intentionally blank
+; 
+; Artmemis (all models) and RostockMAX v3.2 
+; Dual Extrusion machines do not use this file.
 ;
-;
-;==== The following for dual extrusion only. =====
-;M83
-;T1 P0
-;G1 E-140 F7500
+

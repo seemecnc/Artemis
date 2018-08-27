@@ -1,0 +1,8 @@
+M117 Calibrate / Autolevel Proceedure
+M104 S0
+M140 S0
+M117 Heaters Off Begin Probing
+M558 P5 I1 A2 S0.05 H5 F200
+G32
+M500
+M117 Calibrate / Autolevel Complete

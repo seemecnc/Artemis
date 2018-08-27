@@ -1,5 +1,5 @@
 M550 PArtemis                              ; Printer name
-M555 P2                                    ; Repetier Output
+M555 P2                                    ; Gcode Output Type
 M552 S1                                    ; Enable Wifi
 M575 P1 B57600 S1                          ; PanelDue Comm Setup
 G21                                        ; Work in millimetres
@@ -21,9 +21,9 @@ M350 X16 Y16 Z16 E16:16 I1                 ; Set 16x microstepping w/ Interpolat
 M92 X200 Y200 Z200                         ; Set axis steps/mm
 M92 E182.0:182.0                           ; Set extruder steps/mm
 
-M906 X1000 Y1000 Z1000 E1500:1500 I50      ; Set motor currents (mA) and idle current %
+M906 X1200 Y1200 Z1200 E1200:1200 I50      ; Set motor currents (mA) and idle current %
 M201 X5000 Y5000 Z5000 E5000               ; Accelerations (mm/s^2)
-M203 X25000 Y25000 Z25000 E25000           ; Maximum speeds (mm/min)
+M203 X18000 Y18000 Z18000 E18000           ; Maximum speeds (mm/min)
 M566 X2000 Y2000 Z2000 E2000               ; Maximum instant speed changes mm/minute
 
 M106 P0 H-1                                ; Part Cooling Fan
@@ -46,3 +46,5 @@ M557 R140 S30                              ; defualt bed mapping
 M501                                       ; Load saved config values
 T0                                         ; Select Tool 0
 M375									   ; Load height map
+
+;Note Strain Gage hotend probe is not in this file
