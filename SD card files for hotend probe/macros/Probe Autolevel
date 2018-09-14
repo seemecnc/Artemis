@@ -4,4 +4,7 @@ M140 S0
 M558 P5 I0 A2 S0.05 R0.4 H20 F2500
 G32
 M500
+G28
+M84
+M375
 M117 Artemis Autolevel Calibration Complete

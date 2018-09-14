@@ -2,7 +2,7 @@ M550 PArtemis                              ; Printer name
 M555 P2                                    ; Gcode Output Type
 M552 S1                                    ; Enable Wifi
 M575 P1 B57600 S1                          ; PanelDue Comm Setup
-G21                                        ; Work in millimetres
+G21                                        ; Work in millimeters
 G90                                        ; Send absolute coordinates
 
 M569 P0 S0                                 ; Drive 0 goes forwards (X)
@@ -11,13 +11,13 @@ M569 P2 S0                                 ; Drive 2 goes forwards (Z)
 M569 P3 S1                                 ; Drive 3 goes forwards (E0)
 M569 P4 S1                                 ; Drive 4 goes forwards (E1)
 
-M574 X2 Y2 Z2 S1                           ; set endstop configuration (all endstops at high end, active high)
+M574 X2 Y2 Z2 S1                           ; set end stop configuration (all end stops at high end, active high)
 
 M665 R150 L351.155 B145 H530 X0 Y0 Z0      ; delta radius, diagonal rod length, printable radius and homed height
                                            ; Y X Z are tower angle offsets
-M666 X0 Y0 Z0                              ; endstop offsets in mm
+M666 X0 Y0 Z0                              ; end stop offsets in mm
 
-M350 X16 Y16 Z16 E16:16 I1                 ; Set 16x microstepping w/ Interpolation
+M350 X16 Y16 Z16 E16:16 I1                 ; Set 16x micro-stepping w/ Interpolation
 M92 X200 Y200 Z200                         ; Set axis steps/mm
 M92 E182.0:182.0                           ; Set extruder steps/mm
 
@@ -43,8 +43,8 @@ G10 P0 S0 R0                               ; Hot end operating and standby tempe
 ;FSR SETUP
 ;M558 P5 I1 X0 Y0 Z0 H5 F200                ; FSR Settings
 ;G31 P500 X0 Y0 Z-0.3                       ; Probe trigger value and offsets
-;M270 I1 P1 S0.05                           ; Enabled Probe doubletap w/ 0.05mm tolerance
-;M557 R140 S30                              ; defualt bed mapping
+;M270 I1 P1 S0.05                           ; Enabled Probe double-tap w/ 0.05mm tolerance
+;M557 R140 S30                              ; default bed mapping
 ;M501                                       ; Load saved config values
 ;T0                                         ; Select Tool 0
 

@@ -6,4 +6,7 @@ G4 S1
 M558 P5 I1 A2 S0.05 H5 F200
 G32
 M500
+G28
+M84
+M375
 M117 Initial Calibration Complete
