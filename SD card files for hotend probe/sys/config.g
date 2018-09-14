@@ -22,7 +22,7 @@ M92 X200 Y200 Z200                         ; Set axis steps/mm
 M92 E182.0:182.0                           ; Set extruder steps/mm
 
 M906 X1200 Y1200 Z1200 E1200:1200 I50      ; Set motor currents (mA) and idle current %
-M201 X5000 Y5000 Z5000 E5000               ; Accelerations (mm/s^2)
+M201 X4200 Y4200 Z4200 E5000               ; Accelerations (mm/s^2)
 M203 X18000 Y18000 Z18000 E18000           ; Maximum speeds (mm/min)
 M566 X2000 Y2000 Z2000 E2000               ; Maximum instant speed changes mm/minute
 
