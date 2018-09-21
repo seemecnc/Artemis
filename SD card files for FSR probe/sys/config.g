@@ -1,6 +1,12 @@
 M550 PArtemis                              ; Printer name
+M552 S0									   ; Turn of WiFi module
+G4 P1000								   ; Pause one second
+M587 S"seemecnc" P"seeme3dp"			   ; set network ssid and password
+M552 S1									   ; Turn on WiFi module
+;  Open a web browser and type     http://Artemis.local/   
+;  where 'Artemis' is the printer name you can set in the first line
+
 M555 P2                                    ; Gcode Output Type
-M552 S1                                    ; Enable Wifi
 M575 P1 B57600 S1                          ; PanelDue Comm Setup
 G21                                        ; Work in millimetres
 G90                                        ; Send absolute coordinates
@@ -45,6 +51,7 @@ G31 P500 X0 Y0 Z-0.3                       ; Probe trigger value and offsets
 M557 R140 S30                              ; defualt bed mapping
 M501                                       ; Load saved config values
 T0                                         ; Select Tool 0
+
 M375									   ; Load height map
 
 ;Note Strain Gage hotend probe is not in this file
