@@ -27,7 +27,7 @@ M350 X16 Y16 Z16 E16:16 I1                 ; Set 16x microstepping w/ Interpolat
 M92 X200 Y200 Z200                         ; Set axis steps/mm
 M92 E182.0:182.0                           ; Set extruder steps/mm
 
-M906 X1200 Y1200 Z1200 E1200:1200 I50      ; Set motor currents (mA) and idle current %
+M906 X1500 Y1500 Z1500 E1200:1200 I50      ; Set motor currents (mA) and idle current %
 M201 X4200 Y4200 Z4200 E5000               ; Accelerations (mm/s^2)
 M203 X18000 Y18000 Z18000 E18000           ; Maximum speeds (mm/min)
 M566 X2000 Y2000 Z2000 E2000               ; Maximum instant speed changes mm/minute
@@ -43,8 +43,8 @@ M563 P0 D0 H1                              ; Hot end (T0), drive (E0), heater (H
 G10 P0 S0 R0                               ; Hot end operating and standby temperatures
 
 ;Dual Extrusion Code
-;M563 P1 D1 H1 F1                           ; Hot end (T1), drive (E1), heater (H1)
-;G10 P1 S0 R0                               ; Hot end (1) operating and standby temperatures
+;M563 P1 D1 H1                             ; Hot end (T1), drive (E1), heater (H1)
+;G10 P1 S0 R0                              ; Hot end (1) operating and standby temperatures
 
 M558 P5 I1 A2 S0.05 H5 F200                ; FSR Settings
 G31 P500 X0 Y0 Z-0.3                       ; Probe trigger value and offsets
