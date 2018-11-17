@@ -4,6 +4,7 @@ M140 S0
 M117 Heat Off - Starting Autolevel Keep Clear
 M558 P5 I0 A1 S0.05 R0.4 H20 F2500
 G32
+M500
 M117 Bed Mapping
 M558 P5 I0 A1 S0.05 R0.4 H20 F2500
 M106 P0 S0
