@@ -19,7 +19,8 @@ M569 P4 S1                                 ; Drive 4 goes forwards (E1)
 
 M574 X2 Y2 Z2 S1                           ; set endstop configuration (all endstops at high end, active high)
 
-M665 R150 L351.155 B145 H530 X0 Y0 Z0      ; delta radius, diagonal rod length, printable radius and homed height
+M665 R150 L351.1 B145 H530 X0 Y0 Z0        ; INJ. MOLDED ARMS delta radius, diagonal rod length, printable radius and homed height
+;M665 R150 L339.47 B145 H530 X0 Y0 Z0       ; CARBON FIBER ARMS delta radius, diagonal rod length, printable radius and homed height
                                            ; Y X Z are tower angle offsets
 M666 X0 Y0 Z0                              ; endstop offsets in mm
 
