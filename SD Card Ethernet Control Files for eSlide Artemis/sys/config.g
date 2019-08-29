@@ -3,7 +3,7 @@
 
 M111 S0					; debug off
 M550 PARTEMIS                          ; Printer name (can be anything you want)
-M929 P"eventlog.txt" S1                ; event logging start
+;M929 P"eventlog.txt" S1                ; event logging start
 
 ; Networking & Commnications
 M540 P0xF0:0xE1:0xD2:0xC3:0x11:0x11    ; Set your own MAC Address (make different for each SeeMeCNC printer you own)
@@ -20,8 +20,8 @@ G90                                    ; Send absolute coordinates
 M569 P0 S0                             ; Drive 0 goes forwards (X)
 M569 P1 S0                             ; Drive 1 goes forwards (Y)
 M569 P2 S0                             ; Drive 2 goes forwards (Z)
-M569 P3 S0                             ; Drive 3 goes forwards (E0)
-M569 P4 S0                             ; Drive 4 goes forwards (E1)
+M569 P3 S1                             ; Drive 3 goes forwards (E0)
+M569 P4 S1                             ; Drive 4 goes forwards (E1)
 
 M574 X2 Y2 Z2 S1                       ; set end stop configuration (all end stops at high end, active high)
 
@@ -56,7 +56,7 @@ G10 P1 S0 R0                           ; Hot end (1) operating and standby tempe
 ;STRAIN GAGE PROBE
 M558 P5 I0 A2 S0.05 R0.4 H20 F2500     ; Strain gauge probe settings
 G31 P100 X0 Y0 Z-0.25                  ; Probe trigger and offset values
-M557 R245 S30                          ; define probing area
+M557 R140 S30                          ; define probing area
 
 ;Load stored values and heightmap
 M501                                   ; Load config-override values
