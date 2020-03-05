@@ -1,0 +1,2 @@
+M140 S65		;bed
+M104 S170		;hotend

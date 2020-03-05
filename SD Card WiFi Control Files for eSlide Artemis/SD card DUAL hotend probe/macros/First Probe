@@ -1,4 +1,4 @@
-
+M291 P"FIRST PROBE PRINTER SETUP: Did you delete heightmap.csv and config-override.g?  Continue Click OK" R"SETUP PRINTER" S3
 M117 Begin Artemis First Probe Autolevel Calibration
 M117 Heating Bed Please Wait
 M190 S70
