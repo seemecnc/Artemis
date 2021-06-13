@@ -12,6 +12,6 @@ G29 S2                                                  ; clear height map
 G29 S0                                                  ; run mesh calibration
 M500                                                    ; save results to EEPROM
 G28                                                     ; home
-M375                                                    ; load heightmap
+;M375                                                    ; load heightmap
 M84                                                     ; motors off
 M117 End Mesh Probe Calibration                         ; display message
